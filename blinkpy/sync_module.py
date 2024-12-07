@@ -2,7 +2,7 @@
 import logging
 import string
 
-from sortedcontainers import SortedSet
+# from sortedcontainers import SortedSet
 
 import datetime
 import traceback
@@ -54,7 +54,7 @@ class BlinkSyncModule:
             "compatible": False,
             "status": False,
             "last_manifest_id": None,
-            "manifest": SortedSet(),
+            "manifest": None,
             "manifest_stale": True,
             "last_manifest_read": datetime.datetime(1970, 1, 1, 0, 0, 0).isoformat(),
         }
